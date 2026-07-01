@@ -1,0 +1,27 @@
+@{
+    ViewData["Title"] = "Welcome";
+    Layout=null;
+}
+<h1 style="text-align:center;height:110px;line-height:100px;background-color:gray;">Submit Your Feedback</h2>
+<form asp-action="GiveFeedback" method="post">
+    <div style="padding:20px;margin:50px;">
+        <label style="font-size:20px;margin:30px;">Name</label>
+        <input type="text" name="StudentName"style="font-size:18px;padding:8px;"required/>
+    </div>
+    <div style="padding:20px;margin:30px;">
+        <label style="font-size:20px;margin:30px;">Course</label>
+        <input type="text"name="Course"style="font-size:18px;padding:8px;"required/>
+    </div>
+    <div style="padding:20px;margin:30px;">
+        <label style="font-size:20px;margin:30px;">Comments</label>
+        <input type="text" name="Comments"style="font-size:18px;padding:8px;"required/>
+    </div>
+    <div style="padding:20px;margin:30px;">
+        <label style="font-size:20px;margin:30px;">Rating</label>
+        <input type="number" name="Rating"style="font-size:18px;padding:8px;" min="1" max="10" required/>
+    </div>
+    <div style="text-align:center">
+        <button type="submit" style="font-size:20px;margin:30px;background-color:gray;">Submit Feedback</button>
+    </div>
+
+</form>

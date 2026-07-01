@@ -1,0 +1,16 @@
+@{
+    Layout=null;
+}
+@model Feedback
+<h1 style="text-align:center;height:110px;line-height:100px;background-color:gray;">Feedback Summary</h1>
+<p style="text-align:center;">Name: @Model.StudentName</p>
+<p style="text-align:center;">Course: @Model.Course</p>
+<p style="text-align:center;">Comments: @Model.Comments</p>
+<p style="text-align:center;">Rating: @Model.Rating</p>
+<p style="text-align:center;">Submitted On: @Model.DateSubmitted</p>
+<div style="text-align:center;margin-top:50px;">
+    <a href="/Feedback/AllFeedbacks"><button type="button" style="font-size:15px;background-color:gray;">Get All Feedbacks</button></a>
+</div>
+    <div style="text-align:center;margin-top:50px;">
+    <a href="/Feedback/Index"><button type="button" style="font-size:20px;background-color:gray;">Go to Main Page</button></a>
+</div>
